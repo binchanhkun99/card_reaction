@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #44464e;
+}
+.frem {
+    width: 17rem;
+    height: 21rem;
+    background: #17181b;
+    border-radius: 26px;
+    position: relative;
+    padding: 16px;
+}
+.frem .image {
+    width: 100%;
+    height: 16rem;
+    background: url("./tdunggg.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 26px;
+    z-index: 1;
+    position: relative;
+}
+.frem .heartan{
+    position: absolute;
+    width: 6rem;
+    top: 104px;
+    left: 104px;
+}
+.heartan.click{
+    animation: animations 0.7s linear;
+}
+.frem .bottom-cant {
+    width: 100%;
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.frem .bottom-cant .logo-name {
+    width: 9rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.frem .bottom-cant .logo-name .logo {
+    width: 44px;
+    height: 44px;
+    background: url("./vuavt.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.frem .bottom-cant .logo-name p {
+    color: white;
+}
+
+.frem .bottom-cant .logo-name p img {
+    width: 1rem;
+    position: relative;
+    top: -5px;
+}
+.frem .bottom-cant .like {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    flex-direction: column;
+}
+.frem .bottom-cant .like img {
+    width: 2rem;
+}
+
+.frem .bottom-cant .comment{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.frem .bottom-cant .comment img{
+    width: 32px;
+}
+
+.likebt.active{
+    display: none;
+}
+
+@keyframes animations {
+    0%{
+        transform: scale(1);
+        opacity: 0;
+        z-index: 2;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 1;
+        z-index: 2;
+    }
+    100%{
+        transform: scale(1.9);
+        opacity: 0;
+        z-index: 2;
+    }
+}
+
